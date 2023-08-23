@@ -1,8 +1,16 @@
 {
-    "crons":[
+    "version": 2,
+    "builds": [
         {
-        "path":"/count",
-        "schedule":"*/5 * * * * *"
-    }
+            "src": "index.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.js"
+        }
     ]
+   
 }

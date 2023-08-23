@@ -2,7 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
-const axios = require("axios");
 const Count = require("./Model/Count");
 // Load environment variables from .env file
 dotenv.config();
