@@ -11,5 +11,10 @@
             "src": "/(.*)",
             "dest": "index.js"
         }
+    ],
+    "crons":[{
+        "path":"/count",
+        "schedule":"*/5 * * * * *"
+    }
     ]
 }
